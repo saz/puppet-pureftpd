@@ -1,5 +1,5 @@
 name    'saz-pureftpd'
-version '1.0.1'
+version '1.0.2'
 source 'UNKNOWN'
 author 'saz'
 license 'UNKNOWN'
