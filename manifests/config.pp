@@ -6,7 +6,7 @@ class pureftpd::config {
         force   => true,
         owner   => root,
         group   => root,
-        source  => $source ? {
+        source  => $pureftpd::config_source ? {
             undef      => "puppet:///modules/${module_name}/${pureftpd::params::config_source}",
             default => $pureftpd::config_source,
         },
