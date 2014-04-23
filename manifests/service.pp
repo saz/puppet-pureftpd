@@ -3,7 +3,7 @@ class pureftpd::service {
         ensure     => running,
         enable     => true,
         hasrestart => true,
-        hasstatus  => false,
+        hasstatus  => true,
         require    => Class['pureftpd::config'],
     }
 }
