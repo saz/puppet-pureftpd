@@ -22,4 +22,10 @@ class pureftpd::config {
         require => Class['pureftpd::install'],
         notify  => Class['pureftpd::service'],
     }
+    if ($pureftpd::auth_type == 'puredb') {
+        file { '/etc/pure-ftpd/auth/50pure':
+            ensure => 'link',
+            target => '/etc/pure-ftpd/conf/PureDB',
+        }
+    }
 }
