@@ -11,7 +11,6 @@ class pureftpd::params {
         'postgresql': {
           $real_auth_type = '-postgresql'
         }
-        'puredb',
         default: {
           $real_auth_type = ''
         }
